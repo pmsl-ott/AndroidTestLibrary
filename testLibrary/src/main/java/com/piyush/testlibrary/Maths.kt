@@ -1,4 +1,9 @@
 package com.piyush.testlibrary
 
-class Maths {
+object Maths {
+
+    fun addTwoNumbers(numberOne : Int, secondNumber: Int): Int {
+        return (numberOne + secondNumber)
+    }
+
 }
