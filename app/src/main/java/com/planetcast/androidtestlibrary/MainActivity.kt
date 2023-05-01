@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
                 numberOne.text.toString().toInt(),
                 numberTwo.text.toString().toInt()
             )
-            Toast.makeText(this, "$addedNumbers", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "number after add: $addedNumbers", Toast.LENGTH_SHORT).show()
         }
     }
 }
