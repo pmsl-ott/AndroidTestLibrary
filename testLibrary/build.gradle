@@ -41,14 +41,14 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
-//afterEvaluate {
-//    android.libraryVariants.each{variant ->
-//        publishing.publications.create(variant.name, MavenPublication) {
-//            from components.findByName(variant.name)
-//
-//            groupId='com.piyush'
-//            artifactId='AndroidTestLibrary'
-//            version='1.0.0'
-//        }
-//    }
-//}
+afterEvaluate {
+    android.libraryVariants.each{variant ->
+        publishing.publications.create(variant.name, MavenPublication) {
+            from components.findByName(variant.name)
+
+            groupId='com.piyush'
+            artifactId='AndroidTestLibrary'
+            version='1.0.0'
+        }
+    }
+}
